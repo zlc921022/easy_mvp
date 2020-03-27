@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingDefaultResource">
+    <solid android:color="@color/colorWhite" />
+    <stroke
+        android:width="@dimen/dp_1"
+        android:color="@color/textColorBlue3" />
+    <corners android:radius="@dimen/dp_3" />
+</shape> 

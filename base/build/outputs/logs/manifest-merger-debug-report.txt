@@ -1,0 +1,63 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:1:1-22:12
+INJECTED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:1:1-22:12
+INJECTED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:1:1-22:12
+INJECTED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:1:1-22:12
+INJECTED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:1:1-22:12
+INJECTED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:1:1-22:12
+INJECTED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:1:1-22:12
+	package
+		ADDED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:3:5-37
+		INJECTED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml
+		INJECTED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml
+		ADDED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:1:1-22:12
+		INJECTED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:2:5-51
+	android:versionCode
+		INJECTED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml
+		ADDED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:1:1-22:12
+		INJECTED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:6:5-76
+	android:name
+		ADDED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:6:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:7:5-76
+	android:name
+		ADDED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:7:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:8:22-76
+application
+ADDED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:10:5-21:19
+meta-data#design_width_in_dp
+ADDED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:13:9-15:35
+	android:value
+		ADDED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:15:13-32
+	android:name
+		ADDED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:14:13-46
+meta-data#design_height_in_dp
+ADDED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:17:9-19:35
+	android:value
+		ADDED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:19:13-32
+	android:name
+		ADDED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml:18:13-47
+uses-sdk
+INJECTED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml
+INJECTED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml
+		ADDED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml
+		INJECTED from /Users/zlc/Desktop/project/easy_mvp/base/src/main/AndroidManifest.xml

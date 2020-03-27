@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaochen.emvp.widget.viewgroup.MyLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#AA333333"
+    app:ll_orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#e6ee01"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="2dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#00ff00"
+        android:text="1"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="2dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#ff0000"
+        android:text="2"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="2dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#0000ff"
+        android:text="3"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:gravity="center"/>
+
+
+</com.xiaochen.emvp.widget.viewgroup.MyLinearLayout>

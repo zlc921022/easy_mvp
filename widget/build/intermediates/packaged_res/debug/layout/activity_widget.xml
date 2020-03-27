@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xiaochen.emvp.widget.ui.WidgetActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#666666"/>
+
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:textColor="@color/btn_text_selector"
+            android:text="View"
+            android:textSize="10dp"
+            android:drawableTop="@drawable/btn1_selector"
+            android:gravity="center"
+            android:drawablePadding="3dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:checked="true"
+            />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#dddddd"/>
+
+        <RadioButton
+            android:id="@+id/rb_viewgroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:textColor="@color/btn_text_selector"
+            android:textSize="10dp"
+            android:text="ViewGroup"
+            android:gravity="center"
+            android:drawableTop="@drawable/btn2_selector"
+            android:drawablePadding="3dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+/**
+ * 在主项目的根目录下创建config.gradle文件
+ * 在这里单独处理统一依赖问题
+ * 在根目录的build.gradle中进行引入
+ */
+
+def versionMajor = 1
+def versionChild = 0
+def versionPatch = 0
+
+ext {
+
+    //1010001  1.1.1
+    versionCode = versionMajor * 1000000 + versionChild * 10000 + versionPatch * 1
+    versionName = "${versionMajor}.${versionChild}.${versionPatch}"
+
+    //java版本号
+    javaVersion = JavaVersion.VERSION_1_8
+
+    android = [
+            compileSdkVersion: 28,
+            buildToolsVersion: "28.0.3",
+            minSdkVersion    : 18,
+            targetSdkVersion : 28,
+            versionCode      : versionCode,
+            versionName      : versionName
+    ]
+
+    //Android 原生库--------------------------------------------------------------------------------
+    def supportLibrary = "1.0.0"
+    def constraintLayout = "1.1.3"
+    def multidex = "2.0.0"
+
+    supportDependencies = [
+            supportV4         : "androidx.legacy:legacy-support-v4:${supportLibrary}",
+            supportAppcompat  : "androidx.appcompat:appcompat:${supportLibrary}",
+            recyclerView      : "androidx.recyclerview:recyclerview:${supportLibrary}",
+            suppoutDesign     : "com.google.android.material:material:${supportLibrary}",
+            supportAnnotations: "androidx.annotation:annotation:${supportLibrary}",
+            constraintLayout  : "androidx.constraintlayout:constraintlayout:${constraintLayout}",
+            multidex          : "androidx.multidex:multidex:${multidex}"
+    ]
+
+
+    //三方依赖库-------------------------------------------------------------------------------------
+    // 网络请求相关
+    def rxJava = "2.2.6"
+    def rxAndroid = "2.1.1"
+    def retrofit = "2.6.2"
+    def rxJavaAdapter = "2.6.2"
+    def retrofitConverterGson = "2.3.0"
+    def okhttp = "3.8.1"
+    def okhttpLoggingInterceptor = "3.8.1"
+
+    // 三方开源库
+    // kotlin
+    def kotlin = "1.3.50"
+    // recyclerView通用适配器
+    def baseRecyclerViewAdapter = "2.9.48-androidx"
+    // 图片框架
+    def glide = "4.8.0"
+    // 刷新框架
+    def smartRefreshLayout = "1.1.0"
+    def smartRefreshHeader = "1.1.0"
+    // 避免rx内存泄漏
+    def autoDispose = "1.4.0"
+    // gson
+    def gson = "2.8.6"
+    // 事件通信
+    def eventbus = "3.1.1"
+    // 日志管理
+    def timber = "4.7.1"
+    // 注解框架
+    def butterknife = "10.2.0"
+    // 图片压缩
+    def luban = "1.1.8"
+    // 时间选择器
+    def pickerView = "4.1.8"
+    // 屏幕适配
+    def autoSize = "1.1.2"
+    // 管理activity和fragment生命周期
+    def lifecycle = "2.0.0"
+    // 对话框
+    def materialDialogs = "0.9.6.0"
+    // 图片查看 九宫格
+    def photoView = "2.3.0"
+    // 权限相关
+    def rxpermissions = "0.10.2"
+    // banner
+    def banner = "1.4.10"
+    // 路由框架
+    def arouter = "1.5.0"
+    // 沉浸式状态栏
+    def statusbarutil = "1.5.1"
+
+    thirdDependencies = [
+
+            rxJava                   : "io.reactivex.rxjava2:rxjava:${rxJava}",
+            rxAndroid                : "io.reactivex.rxjava2:rxandroid:${rxAndroid}",
+            retrofit                 : "com.squareup.retrofit2:retrofit:${retrofit}",
+            okhttp                   : "com.squareup.okhttp3:okhttp:${okhttp}",
+            okhttpLoggingInterceptor : "com.squareup.okhttp3:logging-interceptor:${okhttpLoggingInterceptor}",
+            retrofitConverterGson    : "com.squareup.retrofit2:converter-gson:${retrofitConverterGson}",
+            rxJavaAdapter            : "com.squareup.retrofit2:adapter-rxjava2:${rxJavaAdapter}",
+            baseRecyclerViewAdapter  : "com.github.CymChad:BaseRecyclerViewAdapterHelper:${baseRecyclerViewAdapter}",
+            glide                    : "com.github.bumptech.glide:glide:${glide}",
+            glideCompiler            : "com.github.bumptech.glide:compiler:${glide}",
+            gson                     : "com.google.code.gson:gson:${gson}",
+            eventbus                 : "org.greenrobot:eventbus:${eventbus}",
+            timber                   : "com.jakewharton.timber:timber:${timber}",
+            butterknife              : "com.jakewharton:butterknife:${butterknife}",
+            butterKnifeCompiler      : "com.jakewharton:butterknife-compiler:${butterknife}",
+            luban                    : "top.zibin:Luban:${luban}",
+            pickerView               : "com.contrarywind:Android-PickerView:${pickerView}",
+            autoSize                 : "me.jessyan:autosize:${autoSize}",
+            photoView                : "com.github.chrisbanes:PhotoView:${photoView}",
+            lifecycle                : "androidx.lifecycle:lifecycle-extensions:${lifecycle}",
+            viewmodel                : "androidx.lifecycle:lifecycle-viewmodel:${lifecycle}",
+            livedata                 : "androidx.lifecycle:lifecycle-livedata:${lifecycle}",
+            smartRefreshLayout       : "com.scwang.smartrefresh:SmartRefreshLayout:${smartRefreshLayout}",
+            smartRefreshHeader       : "com.scwang.smartrefresh:SmartRefreshHeader:${smartRefreshHeader}",
+            //  https://github.com/uber/AutoDispose
+            autoDispose              : "com.uber.autodispose:autodispose:${autoDispose}",
+            autoDisposeAndroid       : "com.uber.autodispose:autodispose-android:${autoDispose}",
+            autoDisposeArchcomponents: "com.uber.autodispose:autodispose-android-archcomponents:${autoDispose}",
+            banner                   : "com.youth.banner:banner:${banner}",
+            rxpermissions            : "com.github.tbruyelle:rxpermissions:${rxpermissions}",
+            materialDialogs          : "com.afollestad.material-dialogs:core:${materialDialogs}",
+            kotlin                   : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin}",
+            //  路由 https://github.com/alibaba/ARouter
+            arouter                  : "com.alibaba:arouter-api:${arouter}",
+            arouterCompiler          : "com.alibaba:arouter-compiler:${arouter}",
+            // 微信sdk
+            statusbarutil            : "com.jaeger.statusbarutil:library:${statusbarutil}"
+    ]
+}

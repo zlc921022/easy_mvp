@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="easy_mvp/app" />
+      <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" group="easy_mvp/base" />
+      <module fileurl="file://$PROJECT_DIR$/data/data.iml" filepath="$PROJECT_DIR$/data/data.iml" group="easy_mvp/data" />
+      <module fileurl="file://$PROJECT_DIR$/easy_mvp.iml" filepath="$PROJECT_DIR$/easy_mvp.iml" group="easy_mvp" />
+      <module fileurl="file://$PROJECT_DIR$/widget/widget.iml" filepath="$PROJECT_DIR$/widget/widget.iml" group="easy_mvp/widget" />
+    </modules>
+  </component>
+</project>

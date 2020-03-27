@@ -1,0 +1,2 @@
+com.xiaochen.emvp.data
+string app_name

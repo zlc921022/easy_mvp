@@ -1,0 +1,4 @@
+include ':app',
+        ':base',
+        ':data',
+        ':widget'

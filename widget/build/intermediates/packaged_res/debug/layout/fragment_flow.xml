@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <com.xiaochen.emvp.widget.viewgroup.FlowLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="Welcome" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="工程师" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="学习ing" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="恋爱" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="挣钱" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="努力ing" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="I think i can" />
+    </com.xiaochen.emvp.widget.viewgroup.FlowLayout>
+
+
+</LinearLayout>

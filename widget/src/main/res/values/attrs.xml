@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--开关按钮属性-->
+    <declare-styleable name="SwitchToggleView">
+        <attr name="toggle_color" format="color"/>
+        <attr name="toggle_openColor" format="color"/>
+        <attr name="toggle_closeColor" format="color"/>
+        <attr name="toggle_round_radius" format="dimension"/>
+        <attr name="toggle_type" format="integer"/>
+        <attr name="toggle_closeBackGroundImg" format="reference"/>
+        <attr name="toggle_openBackGroundImg" format="reference"/>
+        <attr name="toggle_image" format="reference"/>
+    </declare-styleable>
+
+
+    <!--带渐变圆形进度条-->
+    <declare-styleable name="RingProgressBar">
+        <attr name="rpb_ringColor" format="color"/>
+        <attr name="rpb_default_color" format="color"/>
+        <attr name="rpb_ringProgressColor" format="color"/>
+        <attr name="rpb_textColor1" format="color"/>
+        <attr name="rpb_textColor2" format="color"/>
+        <attr name="rpb_ringWidth" format="dimension"/>
+        <attr name="rpb_circleRadius" format="dimension"/>
+        <attr name="rpb_ringRadius" format="dimension"/>
+        <attr name="rpb_textSize1" format="dimension"/>
+        <attr name="rpb_textSize2" format="dimension"/>
+        <attr name="rpb_currentProgress" format="float"/>
+        <attr name="rpb_maxProgress" format="float"/>
+        <attr name="rpb_isShowControlIcon" format="boolean"/>
+    </declare-styleable>
+
+
+    <!--钟表盘-->
+    <declare-styleable name="ClockView">
+        <attr name="hour_line_color" format="color"/>
+        <attr name="minute_line_color" format="color"/>
+        <attr name="second_line_color" format="color"/>
+        <attr name="scale_line_color" format="color"/>
+        <attr name="clock_color" format="color"/>
+        <attr name="out_circle_color" format="color"/>
+        <attr name="mid_circle_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="PieChartView">
+        <attr name="isShowAnimation" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="MyLinearLayout">
+        <attr name="ll_orientation" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="MyRelativeLayout">
+        <attr name="layout_position" format="string"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,86 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+// android配置
+def config = rootProject.ext.android
+// 扩展库
+def supportDependencies = rootProject.ext.supportDependencies
+// 第三库
+def thirdDependencies = rootProject.ext.thirdDependencies
+
+android {
+
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+    }
+
+    compileOptions {
+        sourceCompatibility rootProject.ext.javaVersion
+        targetCompatibility rootProject.ext.javaVersion
+    }
+
+    lintOptions {
+        checkAllWarnings false
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+//依赖库
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+
+    //module
+    implementation project(":data")
+
+    // 扩展库========================================================================================
+    implementation supportDependencies.supportV4
+    implementation supportDependencies.supportAppcompat
+    implementation supportDependencies.multidex
+
+    // 第三方库======================================================================================
+    //网络请求
+    implementation thirdDependencies.rxJava
+    implementation thirdDependencies.rxAndroid
+    implementation thirdDependencies.retrofit
+    implementation thirdDependencies.rxJavaAdapter
+    implementation thirdDependencies.retrofitConverterGson
+
+    //glide
+    implementation thirdDependencies.glide
+    annotationProcessor thirdDependencies.glideCompiler
+    //其他工具库
+    implementation thirdDependencies.timber
+    implementation thirdDependencies.baseRecyclerViewAdapter
+    implementation thirdDependencies.smartRefreshLayout
+    implementation thirdDependencies.smartRefreshHeader
+    implementation thirdDependencies.eventbus
+    implementation thirdDependencies.statusbarutil
+
+    // 注解框架
+    implementation thirdDependencies.butterknife
+    annotationProcessor thirdDependencies.butterKnifeCompiler
+    implementation thirdDependencies.rxpermissions
+    implementation thirdDependencies.materialDialogs
+
+    // 避免rx内存泄漏
+    implementation thirdDependencies.autoDispose
+    implementation thirdDependencies.autoDisposeAndroid
+    implementation thirdDependencies.autoDisposeArchcomponents
+
+    // 屏幕适配
+    implementation thirdDependencies.autoSize
+    // aac 生命周期管理
+    implementation thirdDependencies.lifecycle
+    implementation thirdDependencies.viewmodel
+    implementation thirdDependencies.livedata
+
+}

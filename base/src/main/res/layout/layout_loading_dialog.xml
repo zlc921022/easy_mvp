@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_80"
+    android:layout_height="@dimen/dp_80"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/loading_icon"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80" />
+
+</RelativeLayout>

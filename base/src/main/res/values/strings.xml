@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">base</string>
+    <string name="b_permission">未取得您的照相机权限，此功能无法使用.请前往应用权限设置打开权限</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="confirm">确定</string>
+</resources>

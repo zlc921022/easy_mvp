@@ -1,0 +1,48 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+// android配置
+def config = rootProject.ext.android
+// 第三库
+def thirdDependencies = rootProject.ext.thirdDependencies
+
+android {
+
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+    }
+
+    compileOptions {
+        sourceCompatibility rootProject.ext.javaVersion
+        targetCompatibility rootProject.ext.javaVersion
+    }
+
+    lintOptions {
+        checkAllWarnings false
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+
+    //网络请求
+    implementation  thirdDependencies.rxJava
+    implementation  thirdDependencies.rxAndroid
+    implementation  thirdDependencies.retrofit
+    implementation  thirdDependencies.gson
+    implementation  thirdDependencies.rxJavaAdapter
+    implementation  thirdDependencies.retrofitConverterGson
+    implementation  thirdDependencies.okhttpLoggingInterceptor
+    implementation  thirdDependencies.timber
+    implementation  thirdDependencies.eventbus
+}

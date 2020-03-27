@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true" >
+
+    <item
+        android:drawable="@drawable/pop1"
+        android:duration="160"/>
+    <item
+        android:drawable="@drawable/pop2"
+        android:duration="160"/>
+    <item
+        android:drawable="@drawable/pop3"
+        android:duration="160"/>
+    <item
+        android:drawable="@drawable/pop4"
+        android:duration="160"/>
+    <item
+        android:drawable="@drawable/pop5"
+        android:duration="160"/>
+
+</animation-list>
