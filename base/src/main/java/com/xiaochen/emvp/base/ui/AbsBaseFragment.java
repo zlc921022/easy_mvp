@@ -5,12 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.annotation.Nullable;
-import androidx.lifecycle.Observer;
-
 import com.xiaochen.emvp.base.dialog.LoadingDialog;
 import com.xiaochen.emvp.base.presenter.AbsBasePresenter;
 
+import androidx.annotation.Nullable;
+import androidx.lifecycle.Observer;
 import butterknife.ButterKnife;
 
 /**
@@ -56,7 +55,7 @@ public abstract class AbsBaseFragment<T extends AbsBasePresenter> extends BaseFr
         }
         mPresenter = getPresenter();
         if (mPresenter != null) {
-            mPresenter.bindLifeCycle(getLifecycle());
+            getLifecycle().addObserver(mPresenter);
             loadingDispose();
         }
     }
@@ -141,8 +140,11 @@ public abstract class AbsBaseFragment<T extends AbsBasePresenter> extends BaseFr
 
     @Override
     public void onDestroyView() {
-        super.onDestroyView();
+        if (mPresenter != null) {
+            getLifecycle().removeObserver(mPresenter);
+        }
         isInitView = false;
+        super.onDestroyView();
     }
 
 }

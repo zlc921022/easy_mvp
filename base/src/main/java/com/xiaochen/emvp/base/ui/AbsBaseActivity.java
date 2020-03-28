@@ -2,13 +2,12 @@ package com.xiaochen.emvp.base.ui;
 
 import android.os.Bundle;
 
-import androidx.annotation.Nullable;
-import androidx.lifecycle.Observer;
-
+import com.jaeger.library.StatusBarUtil;
 import com.xiaochen.emvp.base.dialog.LoadingDialog;
 import com.xiaochen.emvp.base.presenter.AbsBasePresenter;
-import com.jaeger.library.StatusBarUtil;
 
+import androidx.annotation.Nullable;
+import androidx.lifecycle.Observer;
 import butterknife.ButterKnife;
 
 /**
@@ -41,7 +40,7 @@ public abstract class AbsBaseActivity<T extends AbsBasePresenter> extends BaseAc
         }
         mPresenter = getPresenter();
         if (mPresenter != null) {
-            mPresenter.bindLifeCycle(getLifecycle());
+            getLifecycle().addObserver(mPresenter);
             loadingDispose();
         }
     }
@@ -112,5 +111,13 @@ public abstract class AbsBaseActivity<T extends AbsBasePresenter> extends BaseAc
      */
     public boolean isShowLoading() {
         return false;
+    }
+
+    @Override
+    protected void onDestroy() {
+        if (mPresenter != null) {
+            getLifecycle().removeObserver(mPresenter);
+        }
+        super.onDestroy();
     }
 }
